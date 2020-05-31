@@ -14,8 +14,6 @@ export namespace Components {
     }
     interface HeaderPrincipale {
     }
-    interface ImgHeader {
-    }
     interface ImgLogo {
     }
     interface ListaContatti {
@@ -55,12 +53,6 @@ declare global {
     var HTMLHeaderPrincipaleElement: {
         prototype: HTMLHeaderPrincipaleElement;
         new (): HTMLHeaderPrincipaleElement;
-    };
-    interface HTMLImgHeaderElement extends Components.ImgHeader, HTMLStencilElement {
-    }
-    var HTMLImgHeaderElement: {
-        prototype: HTMLImgHeaderElement;
-        new (): HTMLImgHeaderElement;
     };
     interface HTMLImgLogoElement extends Components.ImgLogo, HTMLStencilElement {
     }
@@ -109,7 +101,6 @@ declare global {
         "container-body": HTMLContainerBodyElement;
         "contatti-navigazione": HTMLContattiNavigazioneElement;
         "header-principale": HTMLHeaderPrincipaleElement;
-        "img-header": HTMLImgHeaderElement;
         "img-logo": HTMLImgLogoElement;
         "lista-contatti": HTMLListaContattiElement;
         "menu-principale": HTMLMenuPrincipaleElement;
@@ -127,8 +118,6 @@ declare namespace LocalJSX {
     interface ContattiNavigazione {
     }
     interface HeaderPrincipale {
-    }
-    interface ImgHeader {
     }
     interface ImgLogo {
     }
@@ -149,7 +138,6 @@ declare namespace LocalJSX {
         "container-body": ContainerBody;
         "contatti-navigazione": ContattiNavigazione;
         "header-principale": HeaderPrincipale;
-        "img-header": ImgHeader;
         "img-logo": ImgLogo;
         "lista-contatti": ListaContatti;
         "menu-principale": MenuPrincipale;
@@ -167,7 +155,6 @@ declare module "@stencil/core" {
             "container-body": LocalJSX.ContainerBody & JSXBase.HTMLAttributes<HTMLContainerBodyElement>;
             "contatti-navigazione": LocalJSX.ContattiNavigazione & JSXBase.HTMLAttributes<HTMLContattiNavigazioneElement>;
             "header-principale": LocalJSX.HeaderPrincipale & JSXBase.HTMLAttributes<HTMLHeaderPrincipaleElement>;
-            "img-header": LocalJSX.ImgHeader & JSXBase.HTMLAttributes<HTMLImgHeaderElement>;
             "img-logo": LocalJSX.ImgLogo & JSXBase.HTMLAttributes<HTMLImgLogoElement>;
             "lista-contatti": LocalJSX.ListaContatti & JSXBase.HTMLAttributes<HTMLListaContattiElement>;
             "menu-principale": LocalJSX.MenuPrincipale & JSXBase.HTMLAttributes<HTMLMenuPrincipaleElement>;

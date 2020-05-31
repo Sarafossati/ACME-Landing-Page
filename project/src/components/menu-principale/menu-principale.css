@@ -49,14 +49,12 @@ button{
 
 .dropdown-content a:hover {
   background-color: #02336E;
-  border-radius: 10px;
   color: white;
   font-weight: bold;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  border-radius: 10px;
-  background-color: #12A6E6;
+  background-color: white;
 }
 

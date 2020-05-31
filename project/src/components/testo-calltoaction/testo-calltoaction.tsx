@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Host, h } from '@stencil/core';
+import { Component, ComponentInterface, h } from '@stencil/core';
 
 @Component({
   tag: 'testo-calltoaction',
@@ -9,9 +9,14 @@ export class TestoCalltoaction implements ComponentInterface {
 
   render() {
     return (
-      <Host>
-        <slot></slot>
-      </Host>
+      <div class="background">
+        <div class="testi">
+          <h1>On line è più facile e veloce</h1>
+          <p>Puoi riattivare la tua polizza, rinnovarla o pagare una rata direttamente dal sito o dall'app ACME.</p>
+          <br/>
+          <button><a href="#">Scopri di più</a></button>
+        </div>
+      </div>
     );
   }
 

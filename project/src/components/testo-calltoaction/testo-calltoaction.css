@@ -1,3 +1,36 @@
-:host {
-  display: block;
+.background{
+  background: url("/assets/teamwork1.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+
+}
+
+h1{
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 44px;
+}
+
+.testi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 150px;
+  margin-left: 50px;
+}
+
+button {
+  padding: 15px;
+  background-color: #12A6E6;
+  border-radius: 10px;
+  border: 1px solid #02336E;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-align: center;
 }
