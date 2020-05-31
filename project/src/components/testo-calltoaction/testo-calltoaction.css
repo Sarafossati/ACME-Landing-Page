@@ -10,6 +10,9 @@ h1{
   text-transform: uppercase;
   font-weight: bolder;
   font-size: 44px;
+  background-color: #02336E;
+  color: white;
+  padding: 10px;
 }
 
 .testi{
@@ -17,7 +20,7 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 150px;
+  padding-top: 130px;
   margin-left: 50px;
 }
 
