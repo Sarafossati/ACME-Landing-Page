@@ -1,0 +1,23 @@
+input{
+  border: none;
+  border-bottom: 2px solid #12A6E6;
+  background-color: #02336E;
+  color: #12A6E6;
+  padding: 20px;
+  width: 400px;
+  height: 30px;
+  text-align: center;
+}
+
+::placeholder{
+  color: #12A6E6;
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

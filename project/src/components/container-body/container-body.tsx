@@ -12,6 +12,7 @@ export class ContainerBody implements ComponentInterface {
       <div>
         <contatti-navigazione></contatti-navigazione>
         <header-principale></header-principale>
+        <bck-contattaci></bck-contattaci>
       </div>
       
     );
