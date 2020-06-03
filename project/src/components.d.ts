@@ -6,6 +6,8 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface BannerPreventivo {
+    }
     interface BckContattaci {
     }
     interface CampoContattaci {
@@ -15,6 +17,10 @@ export namespace Components {
     interface ContattaciForm {
     }
     interface ContattiNavigazione {
+    }
+    interface DidascaliaFooter {
+    }
+    interface FooterFooter {
     }
     interface HeaderPrincipale {
     }
@@ -38,6 +44,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLBannerPreventivoElement extends Components.BannerPreventivo, HTMLStencilElement {
+    }
+    var HTMLBannerPreventivoElement: {
+        prototype: HTMLBannerPreventivoElement;
+        new (): HTMLBannerPreventivoElement;
+    };
     interface HTMLBckContattaciElement extends Components.BckContattaci, HTMLStencilElement {
     }
     var HTMLBckContattaciElement: {
@@ -67,6 +79,18 @@ declare global {
     var HTMLContattiNavigazioneElement: {
         prototype: HTMLContattiNavigazioneElement;
         new (): HTMLContattiNavigazioneElement;
+    };
+    interface HTMLDidascaliaFooterElement extends Components.DidascaliaFooter, HTMLStencilElement {
+    }
+    var HTMLDidascaliaFooterElement: {
+        prototype: HTMLDidascaliaFooterElement;
+        new (): HTMLDidascaliaFooterElement;
+    };
+    interface HTMLFooterFooterElement extends Components.FooterFooter, HTMLStencilElement {
+    }
+    var HTMLFooterFooterElement: {
+        prototype: HTMLFooterFooterElement;
+        new (): HTMLFooterFooterElement;
     };
     interface HTMLHeaderPrincipaleElement extends Components.HeaderPrincipale, HTMLStencilElement {
     }
@@ -129,11 +153,14 @@ declare global {
         new (): HTMLVociMenuElement;
     };
     interface HTMLElementTagNameMap {
+        "banner-preventivo": HTMLBannerPreventivoElement;
         "bck-contattaci": HTMLBckContattaciElement;
         "campo-contattaci": HTMLCampoContattaciElement;
         "container-body": HTMLContainerBodyElement;
         "contattaci-form": HTMLContattaciFormElement;
         "contatti-navigazione": HTMLContattiNavigazioneElement;
+        "didascalia-footer": HTMLDidascaliaFooterElement;
+        "footer-footer": HTMLFooterFooterElement;
         "header-principale": HTMLHeaderPrincipaleElement;
         "img-logo": HTMLImgLogoElement;
         "lista-contatti": HTMLListaContattiElement;
@@ -147,6 +174,8 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface BannerPreventivo {
+    }
     interface BckContattaci {
     }
     interface CampoContattaci {
@@ -156,6 +185,10 @@ declare namespace LocalJSX {
     interface ContattaciForm {
     }
     interface ContattiNavigazione {
+    }
+    interface DidascaliaFooter {
+    }
+    interface FooterFooter {
     }
     interface HeaderPrincipale {
     }
@@ -178,11 +211,14 @@ declare namespace LocalJSX {
     interface VociMenu {
     }
     interface IntrinsicElements {
+        "banner-preventivo": BannerPreventivo;
         "bck-contattaci": BckContattaci;
         "campo-contattaci": CampoContattaci;
         "container-body": ContainerBody;
         "contattaci-form": ContattaciForm;
         "contatti-navigazione": ContattiNavigazione;
+        "didascalia-footer": DidascaliaFooter;
+        "footer-footer": FooterFooter;
         "header-principale": HeaderPrincipale;
         "img-logo": ImgLogo;
         "lista-contatti": ListaContatti;
@@ -199,11 +235,14 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "banner-preventivo": LocalJSX.BannerPreventivo & JSXBase.HTMLAttributes<HTMLBannerPreventivoElement>;
             "bck-contattaci": LocalJSX.BckContattaci & JSXBase.HTMLAttributes<HTMLBckContattaciElement>;
             "campo-contattaci": LocalJSX.CampoContattaci & JSXBase.HTMLAttributes<HTMLCampoContattaciElement>;
             "container-body": LocalJSX.ContainerBody & JSXBase.HTMLAttributes<HTMLContainerBodyElement>;
             "contattaci-form": LocalJSX.ContattaciForm & JSXBase.HTMLAttributes<HTMLContattaciFormElement>;
             "contatti-navigazione": LocalJSX.ContattiNavigazione & JSXBase.HTMLAttributes<HTMLContattiNavigazioneElement>;
+            "didascalia-footer": LocalJSX.DidascaliaFooter & JSXBase.HTMLAttributes<HTMLDidascaliaFooterElement>;
+            "footer-footer": LocalJSX.FooterFooter & JSXBase.HTMLAttributes<HTMLFooterFooterElement>;
             "header-principale": LocalJSX.HeaderPrincipale & JSXBase.HTMLAttributes<HTMLHeaderPrincipaleElement>;
             "img-logo": LocalJSX.ImgLogo & JSXBase.HTMLAttributes<HTMLImgLogoElement>;
             "lista-contatti": LocalJSX.ListaContatti & JSXBase.HTMLAttributes<HTMLListaContattiElement>;
