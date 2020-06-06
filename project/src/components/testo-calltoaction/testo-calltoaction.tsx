@@ -1,11 +1,15 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
-
+  /**
+   * call to action's text
+   */
+  
 @Component({
   tag: 'testo-calltoaction',
   styleUrl: 'testo-calltoaction.css',
   shadow: true,
 })
 export class TestoCalltoaction implements ComponentInterface {
+
 
   render() {
     return (

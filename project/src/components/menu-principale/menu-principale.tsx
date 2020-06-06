@@ -1,11 +1,15 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
-
+  /**
+   * main menu. fixed on scroll
+   */
+  
 @Component({
   tag: 'menu-principale',
   styleUrl: 'menu-principale.css',
   shadow: true,
 })
 export class MenuPrincipale implements ComponentInterface {
+
 
   render() {
     return (

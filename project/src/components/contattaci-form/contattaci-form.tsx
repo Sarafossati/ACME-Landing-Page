@@ -1,11 +1,15 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
-
+  /*
+  * background for 'contattaci' form
+  */
+ 
 @Component({
   tag: 'contattaci-form',
   styleUrl: 'contattaci-form.css',
   shadow: true,
 })
 export class ContattaciForm implements ComponentInterface {
+  
 
   render() {
     return (

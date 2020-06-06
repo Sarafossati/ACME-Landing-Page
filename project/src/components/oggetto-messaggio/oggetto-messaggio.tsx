@@ -1,11 +1,15 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
-
+  /**
+   * for 'contattaci' form 
+   */
+  
 @Component({
   tag: 'oggetto-messaggio',
   styleUrl: 'oggetto-messaggio.css',
   shadow: true,
 })
 export class OggettoMessaggio implements ComponentInterface {
+
 
   render() {
     return (

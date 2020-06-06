@@ -1,4 +1,7 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
+  /*
+  * container-body contains every component created. It's like an HTML's body
+  */
 
 @Component({
   tag: 'container-body',
@@ -6,6 +9,7 @@ import { Component, ComponentInterface, h } from '@stencil/core';
   shadow: true,
 })
 export class ContainerBody implements ComponentInterface {
+  
 
   render() {
     return (

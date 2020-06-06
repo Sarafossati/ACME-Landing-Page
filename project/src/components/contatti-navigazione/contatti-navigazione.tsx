@@ -1,4 +1,7 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
+  /*
+  * menu fixed on scroll. lista contatti ( white one ) and navigazione principale ( blue one )
+  */
 
 @Component({
   tag: 'contatti-navigazione',
@@ -6,6 +9,7 @@ import { Component, ComponentInterface, h } from '@stencil/core';
   shadow: true,
 })
 export class ContattiNavigazione implements ComponentInterface {
+  
 
   render() {
     return (

@@ -40,8 +40,6 @@ export namespace Components {
     }
     interface TestoContatti {
     }
-    interface VociMenu {
-    }
 }
 declare global {
     interface HTMLBannerPreventivoElement extends Components.BannerPreventivo, HTMLStencilElement {
@@ -146,12 +144,6 @@ declare global {
         prototype: HTMLTestoContattiElement;
         new (): HTMLTestoContattiElement;
     };
-    interface HTMLVociMenuElement extends Components.VociMenu, HTMLStencilElement {
-    }
-    var HTMLVociMenuElement: {
-        prototype: HTMLVociMenuElement;
-        new (): HTMLVociMenuElement;
-    };
     interface HTMLElementTagNameMap {
         "banner-preventivo": HTMLBannerPreventivoElement;
         "bck-contattaci": HTMLBckContattaciElement;
@@ -170,7 +162,6 @@ declare global {
         "testo-calltoaction": HTMLTestoCalltoactionElement;
         "testo-contattaci": HTMLTestoContattaciElement;
         "testo-contatti": HTMLTestoContattiElement;
-        "voci-menu": HTMLVociMenuElement;
     }
 }
 declare namespace LocalJSX {
@@ -208,8 +199,6 @@ declare namespace LocalJSX {
     }
     interface TestoContatti {
     }
-    interface VociMenu {
-    }
     interface IntrinsicElements {
         "banner-preventivo": BannerPreventivo;
         "bck-contattaci": BckContattaci;
@@ -228,7 +217,6 @@ declare namespace LocalJSX {
         "testo-calltoaction": TestoCalltoaction;
         "testo-contattaci": TestoContattaci;
         "testo-contatti": TestoContatti;
-        "voci-menu": VociMenu;
     }
 }
 export { LocalJSX as JSX };
@@ -252,7 +240,6 @@ declare module "@stencil/core" {
             "testo-calltoaction": LocalJSX.TestoCalltoaction & JSXBase.HTMLAttributes<HTMLTestoCalltoactionElement>;
             "testo-contattaci": LocalJSX.TestoContattaci & JSXBase.HTMLAttributes<HTMLTestoContattaciElement>;
             "testo-contatti": LocalJSX.TestoContatti & JSXBase.HTMLAttributes<HTMLTestoContattiElement>;
-            "voci-menu": LocalJSX.VociMenu & JSXBase.HTMLAttributes<HTMLVociMenuElement>;
         }
     }
 }
