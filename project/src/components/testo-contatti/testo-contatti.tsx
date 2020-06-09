@@ -19,7 +19,7 @@ export class TestoContatti implements ComponentInterface {
         <p class="spazio">Milano, Trieste, Roma, Cagliari</p>
         <div class="spazio">
             <a href="http://https://www.facebook.com/"><img class="loghi" src="/assets/fb.svg"></img></a>
-            <a href="http://https://https://www.instagram.com"><img class="loghi" src="/assets/ig.svg"></img></a>
+            <a href="https://www.linkedin.com/"><img class="loghi" src="/assets/linkedin.svg"></img></a>
             <a href="http://https://www.youtube.com/"><img class="loghi" src="/assets/yt.svg"></img></a>
         </div>
       </div>
