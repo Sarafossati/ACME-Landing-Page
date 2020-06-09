@@ -20,13 +20,13 @@
 }
 
 .button{
-border: 2px solid #12A6E6;
-border-radius: 25px;
-color: white;
-background: #12A6E6;
-padding: 6px 40px;
-font-size: 0.8rem;
-transition: 0.8s;
-margin-bottom: 20px;
-cursor: pointer;
+  border: 2px solid #12A6E6;
+  border-radius: 25px;
+  color: white;
+  background: #12A6E6;
+  padding: 6px 40px;
+  font-size: 0.8rem;
+  transition: 0.8s;
+  margin-bottom: 20px;
+  cursor: pointer;
 }

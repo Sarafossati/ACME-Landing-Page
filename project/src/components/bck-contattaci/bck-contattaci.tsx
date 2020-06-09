@@ -9,8 +9,6 @@ import { Component, ComponentInterface, h } from '@stencil/core';
   shadow: true,
 })
 export class BckContattaci implements ComponentInterface {
-  
-
   render() {
     return (
       <div class="bck">
