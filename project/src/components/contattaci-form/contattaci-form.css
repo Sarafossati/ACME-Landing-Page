@@ -1,9 +1,10 @@
 .box-blu{
   height: 700px;
-  width: 900px;
+  width: 70%;
   background-color: #02336E;
   border-radius: 20px;
   border: 2px solid #ffffff;
+  margin: 0 auto;
 }
 
 .spazio{
@@ -18,4 +19,6 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+
 

@@ -3,3 +3,9 @@
   height: auto;
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .logo{
+    margin: auto;
+  }
+}

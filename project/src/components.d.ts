@@ -10,9 +10,15 @@ export namespace Components {
     }
     interface BckContattaci {
     }
+    interface BottoneFaq {
+    }
     interface CampoContattaci {
     }
     interface ContainerBody {
+    }
+    interface ContainerFaq {
+    }
+    interface ContainerMobile {
     }
     interface ContattaciForm {
     }
@@ -27,6 +33,9 @@ export namespace Components {
     interface ImgLogo {
     }
     interface ListaContatti {
+    }
+    interface MenuMobile {
+        "simpleText": string;
     }
     interface MenuPrincipale {
     }
@@ -54,6 +63,12 @@ declare global {
         prototype: HTMLBckContattaciElement;
         new (): HTMLBckContattaciElement;
     };
+    interface HTMLBottoneFaqElement extends Components.BottoneFaq, HTMLStencilElement {
+    }
+    var HTMLBottoneFaqElement: {
+        prototype: HTMLBottoneFaqElement;
+        new (): HTMLBottoneFaqElement;
+    };
     interface HTMLCampoContattaciElement extends Components.CampoContattaci, HTMLStencilElement {
     }
     var HTMLCampoContattaciElement: {
@@ -65,6 +80,18 @@ declare global {
     var HTMLContainerBodyElement: {
         prototype: HTMLContainerBodyElement;
         new (): HTMLContainerBodyElement;
+    };
+    interface HTMLContainerFaqElement extends Components.ContainerFaq, HTMLStencilElement {
+    }
+    var HTMLContainerFaqElement: {
+        prototype: HTMLContainerFaqElement;
+        new (): HTMLContainerFaqElement;
+    };
+    interface HTMLContainerMobileElement extends Components.ContainerMobile, HTMLStencilElement {
+    }
+    var HTMLContainerMobileElement: {
+        prototype: HTMLContainerMobileElement;
+        new (): HTMLContainerMobileElement;
     };
     interface HTMLContattaciFormElement extends Components.ContattaciForm, HTMLStencilElement {
     }
@@ -108,6 +135,12 @@ declare global {
         prototype: HTMLListaContattiElement;
         new (): HTMLListaContattiElement;
     };
+    interface HTMLMenuMobileElement extends Components.MenuMobile, HTMLStencilElement {
+    }
+    var HTMLMenuMobileElement: {
+        prototype: HTMLMenuMobileElement;
+        new (): HTMLMenuMobileElement;
+    };
     interface HTMLMenuPrincipaleElement extends Components.MenuPrincipale, HTMLStencilElement {
     }
     var HTMLMenuPrincipaleElement: {
@@ -147,8 +180,11 @@ declare global {
     interface HTMLElementTagNameMap {
         "banner-preventivo": HTMLBannerPreventivoElement;
         "bck-contattaci": HTMLBckContattaciElement;
+        "bottone-faq": HTMLBottoneFaqElement;
         "campo-contattaci": HTMLCampoContattaciElement;
         "container-body": HTMLContainerBodyElement;
+        "container-faq": HTMLContainerFaqElement;
+        "container-mobile": HTMLContainerMobileElement;
         "contattaci-form": HTMLContattaciFormElement;
         "contatti-navigazione": HTMLContattiNavigazioneElement;
         "didascalia-footer": HTMLDidascaliaFooterElement;
@@ -156,6 +192,7 @@ declare global {
         "header-principale": HTMLHeaderPrincipaleElement;
         "img-logo": HTMLImgLogoElement;
         "lista-contatti": HTMLListaContattiElement;
+        "menu-mobile": HTMLMenuMobileElement;
         "menu-principale": HTMLMenuPrincipaleElement;
         "navigazione-principale": HTMLNavigazionePrincipaleElement;
         "oggetto-messaggio": HTMLOggettoMessaggioElement;
@@ -169,9 +206,15 @@ declare namespace LocalJSX {
     }
     interface BckContattaci {
     }
+    interface BottoneFaq {
+    }
     interface CampoContattaci {
     }
     interface ContainerBody {
+    }
+    interface ContainerFaq {
+    }
+    interface ContainerMobile {
     }
     interface ContattaciForm {
     }
@@ -186,6 +229,9 @@ declare namespace LocalJSX {
     interface ImgLogo {
     }
     interface ListaContatti {
+    }
+    interface MenuMobile {
+        "simpleText"?: string;
     }
     interface MenuPrincipale {
     }
@@ -202,8 +248,11 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "banner-preventivo": BannerPreventivo;
         "bck-contattaci": BckContattaci;
+        "bottone-faq": BottoneFaq;
         "campo-contattaci": CampoContattaci;
         "container-body": ContainerBody;
+        "container-faq": ContainerFaq;
+        "container-mobile": ContainerMobile;
         "contattaci-form": ContattaciForm;
         "contatti-navigazione": ContattiNavigazione;
         "didascalia-footer": DidascaliaFooter;
@@ -211,6 +260,7 @@ declare namespace LocalJSX {
         "header-principale": HeaderPrincipale;
         "img-logo": ImgLogo;
         "lista-contatti": ListaContatti;
+        "menu-mobile": MenuMobile;
         "menu-principale": MenuPrincipale;
         "navigazione-principale": NavigazionePrincipale;
         "oggetto-messaggio": OggettoMessaggio;
@@ -225,8 +275,11 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "banner-preventivo": LocalJSX.BannerPreventivo & JSXBase.HTMLAttributes<HTMLBannerPreventivoElement>;
             "bck-contattaci": LocalJSX.BckContattaci & JSXBase.HTMLAttributes<HTMLBckContattaciElement>;
+            "bottone-faq": LocalJSX.BottoneFaq & JSXBase.HTMLAttributes<HTMLBottoneFaqElement>;
             "campo-contattaci": LocalJSX.CampoContattaci & JSXBase.HTMLAttributes<HTMLCampoContattaciElement>;
             "container-body": LocalJSX.ContainerBody & JSXBase.HTMLAttributes<HTMLContainerBodyElement>;
+            "container-faq": LocalJSX.ContainerFaq & JSXBase.HTMLAttributes<HTMLContainerFaqElement>;
+            "container-mobile": LocalJSX.ContainerMobile & JSXBase.HTMLAttributes<HTMLContainerMobileElement>;
             "contattaci-form": LocalJSX.ContattaciForm & JSXBase.HTMLAttributes<HTMLContattaciFormElement>;
             "contatti-navigazione": LocalJSX.ContattiNavigazione & JSXBase.HTMLAttributes<HTMLContattiNavigazioneElement>;
             "didascalia-footer": LocalJSX.DidascaliaFooter & JSXBase.HTMLAttributes<HTMLDidascaliaFooterElement>;
@@ -234,6 +287,7 @@ declare module "@stencil/core" {
             "header-principale": LocalJSX.HeaderPrincipale & JSXBase.HTMLAttributes<HTMLHeaderPrincipaleElement>;
             "img-logo": LocalJSX.ImgLogo & JSXBase.HTMLAttributes<HTMLImgLogoElement>;
             "lista-contatti": LocalJSX.ListaContatti & JSXBase.HTMLAttributes<HTMLListaContattiElement>;
+            "menu-mobile": LocalJSX.MenuMobile & JSXBase.HTMLAttributes<HTMLMenuMobileElement>;
             "menu-principale": LocalJSX.MenuPrincipale & JSXBase.HTMLAttributes<HTMLMenuPrincipaleElement>;
             "navigazione-principale": LocalJSX.NavigazionePrincipale & JSXBase.HTMLAttributes<HTMLNavigazionePrincipaleElement>;
             "oggetto-messaggio": LocalJSX.OggettoMessaggio & JSXBase.HTMLAttributes<HTMLOggettoMessaggioElement>;
