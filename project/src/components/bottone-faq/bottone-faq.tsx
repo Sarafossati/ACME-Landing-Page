@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h, } from '@stencil/core';
+import { Component, ComponentInterface, h, getAssetPath } from '@stencil/core';
 
 @Component({
   tag: 'bottone-faq',
@@ -12,40 +12,41 @@ export class BottoneFaq implements ComponentInterface {
     return (
         <div class="container">
           <div class="dropdown">
-            <button class="dropbtn">Problemi con l'applicazione</button>
+            <button class="dropbtn">Problemi con l'applicazione <br/><img src={getAssetPath("/assets/freccia.svg")} alt=""/></button>
             <div class="dropdown-content">
-              <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <p class="content">Se hai problemi con il login o devi aggiornare i tuoi dati personali, non esitare a contattarci a questa e-mail: privacy@acme.com</p>
             </div>
           </div>
           <br/>
           <div class="dropdown">
-            <button class="dropbtn">Assistenza clienti</button>
+            <button class="dropbtn">Assistenza clienti <br/><img src={getAssetPath("/assets/freccia.svg")} alt=""/></button>
             <div class="dropdown-content">
-              <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <p class="content">Se hai bisogno del nostro aiuto <a href="#">contattaci</a> e cercheremo di risolvere i tuoi dubbi nel minor tempo possibile. I nostri operatori sono felici di essere al tuo servizio.</p>
             </div>
           </div>
           <br/>
           <div class="dropdown">
-            <button class="dropbtn">Investimento e risparmio</button>
+            <button class="dropbtn">Investimento e risparmio <br/><img src={getAssetPath("/assets/freccia.svg")} alt=""/></button>
             <div class="dropdown-content">
-              <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <p class="content">Se hai bisogno di un consulto: <a href="#">Piano di risparmio</a> e <a href="#">Prodotto investimento</a>. I nostri operatori ti ricontatteranno il prima possibile!</p>
             </div>
           </div>
           <br/>
           <div class="dropdown">
-            <button class="dropbtn">Regolamenti e rendiconti</button>
+            <button class="dropbtn">Regolamenti e rendiconti <br/><img src={getAssetPath("/assets/freccia.svg")} alt=""/></button>
             <div class="dropdown-content">
-              <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <p class="content">In questa sezione puoi visualizzare: <a href="#">Fondi interni</a>, <a href="#">Regolamenti</a>, <a href="#">Rendiconti</a> e <a href="#">Rendimenti</a>. Non esitare a contattarci per ulteriori dubbi. </p>
             </div>
           </div>
           <br/>
           <div class="dropdown">
-            <button class="dropbtn">Partnership</button>
+            <button class="dropbtn">Partnership <br/><img src={getAssetPath("/assets/freccia.svg")} alt=""/></button>
             <div class="dropdown-content">
-              <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <p class="content">I principali Partners di ACME sono: Scuola Mohole, CheBanca, Della Porta Broker, Agea, Mercedes-Benz Financial, RCI Banque.</p>
             </div>
           </div>
         </div>
+        
     );
   }
 

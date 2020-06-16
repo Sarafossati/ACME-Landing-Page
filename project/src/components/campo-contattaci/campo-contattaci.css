@@ -26,3 +26,9 @@ p{
   color: #9c9898;
   font-size: 10px;
 }
+
+@media (max-width: 500px) {
+  input{
+    width: 50%;
+  }
+}

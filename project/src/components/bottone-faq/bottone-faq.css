@@ -16,16 +16,22 @@
   border: none;
   width: 100%;
   cursor: pointer;
-  border-bottom: 1px solid #9c9898;
+  border-bottom: 3px solid #bdb8b8d5;
   border-top: none;
-  background-color: #fff;
+  background-color: #f9f9f91a;
+}
+
+.dropbtn:hover{
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
   width: 40%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -38,10 +44,21 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 50px;
+  background-color: #f9f9f94d;
+  background-image: url(assets/acme-business.jpeg);
+  padding: 20px;
 }
 
 .content{
   font-size: 10px;
   text-align: center;
+  background-color: rgba(240, 235, 235, 0.37);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+img{
+  width: 25px;
+  height: auto;
 }
 

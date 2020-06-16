@@ -13,3 +13,9 @@ a:-webkit-any-link {
   text-decoration: none;
   
 }
+
+@media (max-width: 500px) {
+  p{
+    font-size: 12px;
+  }
+}

@@ -31,3 +31,31 @@
   cursor: pointer;
   padding: 7px;
 }
+
+@media (max-width: 500px) {
+  .div-contatti{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 10px;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .loghi{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .spazio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
