@@ -14,7 +14,7 @@
   padding: 16px;
   font-size: 14px;
   border: none;
-  width: 80%;
+  width: 100%;
   cursor: pointer;
   border-bottom: 1px solid #9c9898;
   border-top: none;
@@ -25,6 +25,7 @@
   position: relative;
   display: inline-block;
   width: 40%;
+  margin-bottom: 20px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -33,9 +34,9 @@
 
 .container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -43,3 +44,4 @@
   font-size: 10px;
   text-align: center;
 }
+
