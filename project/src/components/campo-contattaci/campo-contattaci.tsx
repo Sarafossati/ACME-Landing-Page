@@ -20,7 +20,8 @@ export class CampoContattaci implements ComponentInterface {
           <input placeholder="La tua e-mail *" required></input>
           <oggetto-messaggio></oggetto-messaggio>
           <br/>
-          <input placeholder="Il tuo messaggio *" required></input>
+          <input class="contattaci-messaggio" placeholder="Il tuo messaggio *" required></input>
+          <bottone-chiaro btnTextChiaro="Invia"></bottone-chiaro>
         </div>
 
     );

@@ -1,5 +1,8 @@
 import { Component, ComponentInterface, h, getAssetPath } from '@stencil/core';
-
+/*
+  * contains faq's section
+  */
+ 
 @Component({
   tag: 'bottone-faq',
   styleUrl: 'bottone-faq.css',
@@ -11,13 +14,7 @@ export class BottoneFaq implements ComponentInterface {
   render() {
     return (
         <div class="container">
-          <div class="dropdown">
-            <button class="dropbtn">Problemi con l'applicazione <br/><img src={getAssetPath("/assets/freccia.svg")} alt=""/></button>
-            <div class="dropdown-content">
-              <p class="content">Se hai problemi con il login o devi aggiornare i tuoi dati personali, non esitare a contattarci a questa e-mail: privacy@acme.com</p>
-            </div>
-          </div>
-          <br/>
+          
           <div class="dropdown">
             <button class="dropbtn">Assistenza clienti <br/><img src={getAssetPath("/assets/freccia.svg")} alt=""/></button>
             <div class="dropdown-content">

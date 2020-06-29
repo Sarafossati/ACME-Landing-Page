@@ -16,11 +16,11 @@ export class ContainerBody implements ComponentInterface {
       <div>
         <contatti-navigazione></contatti-navigazione>
         <header-principale></header-principale>
-        <cerchio>da fare</cerchio>
-        <carte>da fare</carte>
+        <box-cerchi></box-cerchi>
+        <container-carte></container-carte>
         <banner-preventivo></banner-preventivo>
+        <box-staff></box-staff>
         <bck-contattaci></bck-contattaci>
-        <staff>da fare</staff>
         <container-faq></container-faq>
         <footer-footer></footer-footer>
         <didascalia-footer></didascalia-footer>

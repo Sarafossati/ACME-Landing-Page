@@ -10,11 +10,39 @@ export namespace Components {
     }
     interface BckContattaci {
     }
+    interface BottoneChiaro {
+        /**
+          * Bottone chiaro con lo sfondo #12A6E6
+         */
+        "btnTextChiaro": string;
+    }
     interface BottoneFaq {
+    }
+    interface BottoneScuro {
+        /**
+          * Bottone scuro con lo sfondo #02336E
+         */
+        "btnTextScuro": string;
+    }
+    interface BoxCerchi {
+        /**
+          * contenitore cerchi con icone svg
+         */
+        "icona1": string;
+        "icona2": string;
+        "icona3": string;
+    }
+    interface BoxStaff {
+        /**
+          * contenitore cerchi con immagini dello sfaff dell'azienda
+         */
+        "staff": string;
     }
     interface CampoContattaci {
     }
     interface ContainerBody {
+    }
+    interface ContainerCarte {
     }
     interface ContainerFaq {
     }
@@ -43,11 +71,41 @@ export namespace Components {
     }
     interface OggettoMessaggio {
     }
+    interface PrimaCarta {
+    }
+    interface PrimaImg {
+    }
+    interface PrimoBoxTesto {
+    }
+    interface QuartaCarta {
+    }
+    interface QuartaImmagine {
+    }
+    interface SecondaCarta {
+    }
+    interface SecondaImmagine {
+    }
+    interface SimpleText {
+        /**
+          * Prop per rendere il testo variabile all'interno del sito
+         */
+        "simpleText": string;
+    }
+    interface TerzaCarta {
+    }
+    interface TerzaImmagine {
+    }
     interface TestoCalltoaction {
     }
     interface TestoContattaci {
     }
     interface TestoContatti {
+    }
+    interface TitoliCarte {
+        /**
+          * Prop per rendere variabile i titoli all'interno delle carte
+         */
+        "cardTitol": string;
     }
 }
 declare global {
@@ -63,11 +121,35 @@ declare global {
         prototype: HTMLBckContattaciElement;
         new (): HTMLBckContattaciElement;
     };
+    interface HTMLBottoneChiaroElement extends Components.BottoneChiaro, HTMLStencilElement {
+    }
+    var HTMLBottoneChiaroElement: {
+        prototype: HTMLBottoneChiaroElement;
+        new (): HTMLBottoneChiaroElement;
+    };
     interface HTMLBottoneFaqElement extends Components.BottoneFaq, HTMLStencilElement {
     }
     var HTMLBottoneFaqElement: {
         prototype: HTMLBottoneFaqElement;
         new (): HTMLBottoneFaqElement;
+    };
+    interface HTMLBottoneScuroElement extends Components.BottoneScuro, HTMLStencilElement {
+    }
+    var HTMLBottoneScuroElement: {
+        prototype: HTMLBottoneScuroElement;
+        new (): HTMLBottoneScuroElement;
+    };
+    interface HTMLBoxCerchiElement extends Components.BoxCerchi, HTMLStencilElement {
+    }
+    var HTMLBoxCerchiElement: {
+        prototype: HTMLBoxCerchiElement;
+        new (): HTMLBoxCerchiElement;
+    };
+    interface HTMLBoxStaffElement extends Components.BoxStaff, HTMLStencilElement {
+    }
+    var HTMLBoxStaffElement: {
+        prototype: HTMLBoxStaffElement;
+        new (): HTMLBoxStaffElement;
     };
     interface HTMLCampoContattaciElement extends Components.CampoContattaci, HTMLStencilElement {
     }
@@ -80,6 +162,12 @@ declare global {
     var HTMLContainerBodyElement: {
         prototype: HTMLContainerBodyElement;
         new (): HTMLContainerBodyElement;
+    };
+    interface HTMLContainerCarteElement extends Components.ContainerCarte, HTMLStencilElement {
+    }
+    var HTMLContainerCarteElement: {
+        prototype: HTMLContainerCarteElement;
+        new (): HTMLContainerCarteElement;
     };
     interface HTMLContainerFaqElement extends Components.ContainerFaq, HTMLStencilElement {
     }
@@ -159,6 +247,66 @@ declare global {
         prototype: HTMLOggettoMessaggioElement;
         new (): HTMLOggettoMessaggioElement;
     };
+    interface HTMLPrimaCartaElement extends Components.PrimaCarta, HTMLStencilElement {
+    }
+    var HTMLPrimaCartaElement: {
+        prototype: HTMLPrimaCartaElement;
+        new (): HTMLPrimaCartaElement;
+    };
+    interface HTMLPrimaImgElement extends Components.PrimaImg, HTMLStencilElement {
+    }
+    var HTMLPrimaImgElement: {
+        prototype: HTMLPrimaImgElement;
+        new (): HTMLPrimaImgElement;
+    };
+    interface HTMLPrimoBoxTestoElement extends Components.PrimoBoxTesto, HTMLStencilElement {
+    }
+    var HTMLPrimoBoxTestoElement: {
+        prototype: HTMLPrimoBoxTestoElement;
+        new (): HTMLPrimoBoxTestoElement;
+    };
+    interface HTMLQuartaCartaElement extends Components.QuartaCarta, HTMLStencilElement {
+    }
+    var HTMLQuartaCartaElement: {
+        prototype: HTMLQuartaCartaElement;
+        new (): HTMLQuartaCartaElement;
+    };
+    interface HTMLQuartaImmagineElement extends Components.QuartaImmagine, HTMLStencilElement {
+    }
+    var HTMLQuartaImmagineElement: {
+        prototype: HTMLQuartaImmagineElement;
+        new (): HTMLQuartaImmagineElement;
+    };
+    interface HTMLSecondaCartaElement extends Components.SecondaCarta, HTMLStencilElement {
+    }
+    var HTMLSecondaCartaElement: {
+        prototype: HTMLSecondaCartaElement;
+        new (): HTMLSecondaCartaElement;
+    };
+    interface HTMLSecondaImmagineElement extends Components.SecondaImmagine, HTMLStencilElement {
+    }
+    var HTMLSecondaImmagineElement: {
+        prototype: HTMLSecondaImmagineElement;
+        new (): HTMLSecondaImmagineElement;
+    };
+    interface HTMLSimpleTextElement extends Components.SimpleText, HTMLStencilElement {
+    }
+    var HTMLSimpleTextElement: {
+        prototype: HTMLSimpleTextElement;
+        new (): HTMLSimpleTextElement;
+    };
+    interface HTMLTerzaCartaElement extends Components.TerzaCarta, HTMLStencilElement {
+    }
+    var HTMLTerzaCartaElement: {
+        prototype: HTMLTerzaCartaElement;
+        new (): HTMLTerzaCartaElement;
+    };
+    interface HTMLTerzaImmagineElement extends Components.TerzaImmagine, HTMLStencilElement {
+    }
+    var HTMLTerzaImmagineElement: {
+        prototype: HTMLTerzaImmagineElement;
+        new (): HTMLTerzaImmagineElement;
+    };
     interface HTMLTestoCalltoactionElement extends Components.TestoCalltoaction, HTMLStencilElement {
     }
     var HTMLTestoCalltoactionElement: {
@@ -177,12 +325,23 @@ declare global {
         prototype: HTMLTestoContattiElement;
         new (): HTMLTestoContattiElement;
     };
+    interface HTMLTitoliCarteElement extends Components.TitoliCarte, HTMLStencilElement {
+    }
+    var HTMLTitoliCarteElement: {
+        prototype: HTMLTitoliCarteElement;
+        new (): HTMLTitoliCarteElement;
+    };
     interface HTMLElementTagNameMap {
         "banner-preventivo": HTMLBannerPreventivoElement;
         "bck-contattaci": HTMLBckContattaciElement;
+        "bottone-chiaro": HTMLBottoneChiaroElement;
         "bottone-faq": HTMLBottoneFaqElement;
+        "bottone-scuro": HTMLBottoneScuroElement;
+        "box-cerchi": HTMLBoxCerchiElement;
+        "box-staff": HTMLBoxStaffElement;
         "campo-contattaci": HTMLCampoContattaciElement;
         "container-body": HTMLContainerBodyElement;
+        "container-carte": HTMLContainerCarteElement;
         "container-faq": HTMLContainerFaqElement;
         "container-mobile": HTMLContainerMobileElement;
         "contattaci-form": HTMLContattaciFormElement;
@@ -196,9 +355,20 @@ declare global {
         "menu-principale": HTMLMenuPrincipaleElement;
         "navigazione-principale": HTMLNavigazionePrincipaleElement;
         "oggetto-messaggio": HTMLOggettoMessaggioElement;
+        "prima-carta": HTMLPrimaCartaElement;
+        "prima-img": HTMLPrimaImgElement;
+        "primo-box-testo": HTMLPrimoBoxTestoElement;
+        "quarta-carta": HTMLQuartaCartaElement;
+        "quarta-immagine": HTMLQuartaImmagineElement;
+        "seconda-carta": HTMLSecondaCartaElement;
+        "seconda-immagine": HTMLSecondaImmagineElement;
+        "simple-text": HTMLSimpleTextElement;
+        "terza-carta": HTMLTerzaCartaElement;
+        "terza-immagine": HTMLTerzaImmagineElement;
         "testo-calltoaction": HTMLTestoCalltoactionElement;
         "testo-contattaci": HTMLTestoContattaciElement;
         "testo-contatti": HTMLTestoContattiElement;
+        "titoli-carte": HTMLTitoliCarteElement;
     }
 }
 declare namespace LocalJSX {
@@ -206,11 +376,39 @@ declare namespace LocalJSX {
     }
     interface BckContattaci {
     }
+    interface BottoneChiaro {
+        /**
+          * Bottone chiaro con lo sfondo #12A6E6
+         */
+        "btnTextChiaro"?: string;
+    }
     interface BottoneFaq {
+    }
+    interface BottoneScuro {
+        /**
+          * Bottone scuro con lo sfondo #02336E
+         */
+        "btnTextScuro"?: string;
+    }
+    interface BoxCerchi {
+        /**
+          * contenitore cerchi con icone svg
+         */
+        "icona1"?: string;
+        "icona2"?: string;
+        "icona3"?: string;
+    }
+    interface BoxStaff {
+        /**
+          * contenitore cerchi con immagini dello sfaff dell'azienda
+         */
+        "staff"?: string;
     }
     interface CampoContattaci {
     }
     interface ContainerBody {
+    }
+    interface ContainerCarte {
     }
     interface ContainerFaq {
     }
@@ -239,18 +437,53 @@ declare namespace LocalJSX {
     }
     interface OggettoMessaggio {
     }
+    interface PrimaCarta {
+    }
+    interface PrimaImg {
+    }
+    interface PrimoBoxTesto {
+    }
+    interface QuartaCarta {
+    }
+    interface QuartaImmagine {
+    }
+    interface SecondaCarta {
+    }
+    interface SecondaImmagine {
+    }
+    interface SimpleText {
+        /**
+          * Prop per rendere il testo variabile all'interno del sito
+         */
+        "simpleText"?: string;
+    }
+    interface TerzaCarta {
+    }
+    interface TerzaImmagine {
+    }
     interface TestoCalltoaction {
     }
     interface TestoContattaci {
     }
     interface TestoContatti {
     }
+    interface TitoliCarte {
+        /**
+          * Prop per rendere variabile i titoli all'interno delle carte
+         */
+        "cardTitol"?: string;
+    }
     interface IntrinsicElements {
         "banner-preventivo": BannerPreventivo;
         "bck-contattaci": BckContattaci;
+        "bottone-chiaro": BottoneChiaro;
         "bottone-faq": BottoneFaq;
+        "bottone-scuro": BottoneScuro;
+        "box-cerchi": BoxCerchi;
+        "box-staff": BoxStaff;
         "campo-contattaci": CampoContattaci;
         "container-body": ContainerBody;
+        "container-carte": ContainerCarte;
         "container-faq": ContainerFaq;
         "container-mobile": ContainerMobile;
         "contattaci-form": ContattaciForm;
@@ -264,9 +497,20 @@ declare namespace LocalJSX {
         "menu-principale": MenuPrincipale;
         "navigazione-principale": NavigazionePrincipale;
         "oggetto-messaggio": OggettoMessaggio;
+        "prima-carta": PrimaCarta;
+        "prima-img": PrimaImg;
+        "primo-box-testo": PrimoBoxTesto;
+        "quarta-carta": QuartaCarta;
+        "quarta-immagine": QuartaImmagine;
+        "seconda-carta": SecondaCarta;
+        "seconda-immagine": SecondaImmagine;
+        "simple-text": SimpleText;
+        "terza-carta": TerzaCarta;
+        "terza-immagine": TerzaImmagine;
         "testo-calltoaction": TestoCalltoaction;
         "testo-contattaci": TestoContattaci;
         "testo-contatti": TestoContatti;
+        "titoli-carte": TitoliCarte;
     }
 }
 export { LocalJSX as JSX };
@@ -275,9 +519,14 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "banner-preventivo": LocalJSX.BannerPreventivo & JSXBase.HTMLAttributes<HTMLBannerPreventivoElement>;
             "bck-contattaci": LocalJSX.BckContattaci & JSXBase.HTMLAttributes<HTMLBckContattaciElement>;
+            "bottone-chiaro": LocalJSX.BottoneChiaro & JSXBase.HTMLAttributes<HTMLBottoneChiaroElement>;
             "bottone-faq": LocalJSX.BottoneFaq & JSXBase.HTMLAttributes<HTMLBottoneFaqElement>;
+            "bottone-scuro": LocalJSX.BottoneScuro & JSXBase.HTMLAttributes<HTMLBottoneScuroElement>;
+            "box-cerchi": LocalJSX.BoxCerchi & JSXBase.HTMLAttributes<HTMLBoxCerchiElement>;
+            "box-staff": LocalJSX.BoxStaff & JSXBase.HTMLAttributes<HTMLBoxStaffElement>;
             "campo-contattaci": LocalJSX.CampoContattaci & JSXBase.HTMLAttributes<HTMLCampoContattaciElement>;
             "container-body": LocalJSX.ContainerBody & JSXBase.HTMLAttributes<HTMLContainerBodyElement>;
+            "container-carte": LocalJSX.ContainerCarte & JSXBase.HTMLAttributes<HTMLContainerCarteElement>;
             "container-faq": LocalJSX.ContainerFaq & JSXBase.HTMLAttributes<HTMLContainerFaqElement>;
             "container-mobile": LocalJSX.ContainerMobile & JSXBase.HTMLAttributes<HTMLContainerMobileElement>;
             "contattaci-form": LocalJSX.ContattaciForm & JSXBase.HTMLAttributes<HTMLContattaciFormElement>;
@@ -291,9 +540,20 @@ declare module "@stencil/core" {
             "menu-principale": LocalJSX.MenuPrincipale & JSXBase.HTMLAttributes<HTMLMenuPrincipaleElement>;
             "navigazione-principale": LocalJSX.NavigazionePrincipale & JSXBase.HTMLAttributes<HTMLNavigazionePrincipaleElement>;
             "oggetto-messaggio": LocalJSX.OggettoMessaggio & JSXBase.HTMLAttributes<HTMLOggettoMessaggioElement>;
+            "prima-carta": LocalJSX.PrimaCarta & JSXBase.HTMLAttributes<HTMLPrimaCartaElement>;
+            "prima-img": LocalJSX.PrimaImg & JSXBase.HTMLAttributes<HTMLPrimaImgElement>;
+            "primo-box-testo": LocalJSX.PrimoBoxTesto & JSXBase.HTMLAttributes<HTMLPrimoBoxTestoElement>;
+            "quarta-carta": LocalJSX.QuartaCarta & JSXBase.HTMLAttributes<HTMLQuartaCartaElement>;
+            "quarta-immagine": LocalJSX.QuartaImmagine & JSXBase.HTMLAttributes<HTMLQuartaImmagineElement>;
+            "seconda-carta": LocalJSX.SecondaCarta & JSXBase.HTMLAttributes<HTMLSecondaCartaElement>;
+            "seconda-immagine": LocalJSX.SecondaImmagine & JSXBase.HTMLAttributes<HTMLSecondaImmagineElement>;
+            "simple-text": LocalJSX.SimpleText & JSXBase.HTMLAttributes<HTMLSimpleTextElement>;
+            "terza-carta": LocalJSX.TerzaCarta & JSXBase.HTMLAttributes<HTMLTerzaCartaElement>;
+            "terza-immagine": LocalJSX.TerzaImmagine & JSXBase.HTMLAttributes<HTMLTerzaImmagineElement>;
             "testo-calltoaction": LocalJSX.TestoCalltoaction & JSXBase.HTMLAttributes<HTMLTestoCalltoactionElement>;
             "testo-contattaci": LocalJSX.TestoContattaci & JSXBase.HTMLAttributes<HTMLTestoContattaciElement>;
             "testo-contatti": LocalJSX.TestoContatti & JSXBase.HTMLAttributes<HTMLTestoContattiElement>;
+            "titoli-carte": LocalJSX.TitoliCarte & JSXBase.HTMLAttributes<HTMLTitoliCarteElement>;
         }
     }
 }

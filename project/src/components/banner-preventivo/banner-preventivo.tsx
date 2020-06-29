@@ -11,7 +11,7 @@ export class BannerPreventivo implements ComponentInterface {
     return (
       <div class="cta">
         <h2>REALIZZA I TUOI SOGNI CON UN CLICK</h2>
-        <a href="#"><button class="button">PREVENTIVO</button></a>
+        <bottone-chiaro btnTextChiaro="Preventivo"></bottone-chiaro>
       </div>
     );
   }

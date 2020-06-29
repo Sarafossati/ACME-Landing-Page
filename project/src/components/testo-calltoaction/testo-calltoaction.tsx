@@ -18,7 +18,7 @@ export class TestoCalltoaction implements ComponentInterface {
           <h1>Online è più facile e veloce</h1>
           <p>Riattiva o rinnova la tua polizza direttamente dal sito o dall'app ACME.</p>
           <br/>
-          <button><a href="#">Scopri di più</a></button>
+          <bottone-chiaro btnTextChiaro="Scopri di più"></bottone-chiaro>
         </div>
       </div>
     );

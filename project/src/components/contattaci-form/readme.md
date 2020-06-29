@@ -16,7 +16,8 @@
 - [testo-contattaci](../testo-contattaci)
 - [campo-contattaci](../campo-contattaci)
 
-### Graph```mermaid
+### Graph
+```mermaid
 graph TD;
   contattaci-form --> testo-contattaci
   contattaci-form --> campo-contattaci

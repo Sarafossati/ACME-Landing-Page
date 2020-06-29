@@ -1,4 +1,7 @@
 import { Component, ComponentInterface, h, Prop, getAssetPath } from '@stencil/core';
+/*
+* main menu for mobile
+*/
 
 @Component({
   tag: 'menu-mobile',
