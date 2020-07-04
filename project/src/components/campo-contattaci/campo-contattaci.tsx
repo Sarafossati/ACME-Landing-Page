@@ -13,18 +13,21 @@ export class CampoContattaci implements ComponentInterface {
 
   render() {
     return (
-        <div>
+        <form>
           <p>* I campi contrassegnati sono obbligatori</p>  
           <br/>
-          <input placeholder="Il tuo nome *" required></input>
-          <input placeholder="La tua e-mail *" required></input>
+          <input type="text" placeholder="Il tuo nome *" required></input>
+          <input type="email" placeholder="La tua e-mail *" required></input>
           <oggetto-messaggio></oggetto-messaggio>
           <br/>
           <input class="contattaci-messaggio" placeholder="Il tuo messaggio *" required></input>
           <bottone-chiaro btnTextChiaro="Invia"></bottone-chiaro>
-        </div>
+        </form>
 
     );
   }
 
 }
+
+
+

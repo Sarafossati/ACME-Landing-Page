@@ -19,6 +19,7 @@ export class ContainerBody implements ComponentInterface {
         <box-cerchi></box-cerchi>
         <container-carte></container-carte>
         <banner-preventivo></banner-preventivo>
+        <news-section></news-section>
         <box-staff></box-staff>
         <bck-contattaci></bck-contattaci>
         <container-faq></container-faq>

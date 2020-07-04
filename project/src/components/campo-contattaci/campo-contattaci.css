@@ -1,21 +1,10 @@
-input{
-  border: none;
-  border-bottom: 2px solid #12A6E6;
-  background-color: #02336E;
-  color: #12A6E6;
-  padding: 20px;
-  width: 400px;
-  height: 30px;
-  text-align: center;
-}
-
 ::placeholder{
   color: #12A6E6;
   opacity: 0.6;
   font-size: 16px;
 }
 
-div{
+form{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,6 +18,32 @@ p{
 
 .contattaci-messaggio{
   margin-bottom: 1em;
+  background-color: rgba(255, 255, 255, 0.041);
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #12a6e6;
+  background-color: #02336e;
+  color: #12a6e6;
+  padding: 20px;
+  width: 400px;
+  height: 30px;
+  text-align: center;
+}
+input::placeholder {
+  color: #fff;
+}
+input:focus {
+  background-color: rgba(236, 236, 233, 0.2);
+  border-bottom: 2px solid #2929d1;
+}
+input:required:invalid {
+  border-bottom: 4px solid red;
+  color: red;
+}
+input:required:valid {
+  border-color: 2px solid green;
 }
 
 @media (max-width: 500px) {
@@ -36,3 +51,6 @@ p{
     width: 50%;
   }
 }
+
+
+

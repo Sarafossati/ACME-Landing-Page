@@ -69,6 +69,8 @@ export namespace Components {
     }
     interface NavigazionePrincipale {
     }
+    interface NewsSection {
+    }
     interface OggettoMessaggio {
     }
     interface PrimaCarta {
@@ -241,6 +243,12 @@ declare global {
         prototype: HTMLNavigazionePrincipaleElement;
         new (): HTMLNavigazionePrincipaleElement;
     };
+    interface HTMLNewsSectionElement extends Components.NewsSection, HTMLStencilElement {
+    }
+    var HTMLNewsSectionElement: {
+        prototype: HTMLNewsSectionElement;
+        new (): HTMLNewsSectionElement;
+    };
     interface HTMLOggettoMessaggioElement extends Components.OggettoMessaggio, HTMLStencilElement {
     }
     var HTMLOggettoMessaggioElement: {
@@ -354,6 +362,7 @@ declare global {
         "menu-mobile": HTMLMenuMobileElement;
         "menu-principale": HTMLMenuPrincipaleElement;
         "navigazione-principale": HTMLNavigazionePrincipaleElement;
+        "news-section": HTMLNewsSectionElement;
         "oggetto-messaggio": HTMLOggettoMessaggioElement;
         "prima-carta": HTMLPrimaCartaElement;
         "prima-img": HTMLPrimaImgElement;
@@ -435,6 +444,8 @@ declare namespace LocalJSX {
     }
     interface NavigazionePrincipale {
     }
+    interface NewsSection {
+    }
     interface OggettoMessaggio {
     }
     interface PrimaCarta {
@@ -496,6 +507,7 @@ declare namespace LocalJSX {
         "menu-mobile": MenuMobile;
         "menu-principale": MenuPrincipale;
         "navigazione-principale": NavigazionePrincipale;
+        "news-section": NewsSection;
         "oggetto-messaggio": OggettoMessaggio;
         "prima-carta": PrimaCarta;
         "prima-img": PrimaImg;
@@ -539,6 +551,7 @@ declare module "@stencil/core" {
             "menu-mobile": LocalJSX.MenuMobile & JSXBase.HTMLAttributes<HTMLMenuMobileElement>;
             "menu-principale": LocalJSX.MenuPrincipale & JSXBase.HTMLAttributes<HTMLMenuPrincipaleElement>;
             "navigazione-principale": LocalJSX.NavigazionePrincipale & JSXBase.HTMLAttributes<HTMLNavigazionePrincipaleElement>;
+            "news-section": LocalJSX.NewsSection & JSXBase.HTMLAttributes<HTMLNewsSectionElement>;
             "oggetto-messaggio": LocalJSX.OggettoMessaggio & JSXBase.HTMLAttributes<HTMLOggettoMessaggioElement>;
             "prima-carta": LocalJSX.PrimaCarta & JSXBase.HTMLAttributes<HTMLPrimaCartaElement>;
             "prima-img": LocalJSX.PrimaImg & JSXBase.HTMLAttributes<HTMLPrimaImgElement>;
