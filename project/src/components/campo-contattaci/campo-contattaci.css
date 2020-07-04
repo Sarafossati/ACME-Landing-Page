@@ -9,6 +9,7 @@ form{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 1em;
 }
 
 p{
@@ -18,16 +19,17 @@ p{
 
 .contattaci-messaggio{
   margin-bottom: 1em;
-  background-color: rgba(255, 255, 255, 0.041);
 }
 
 input {
-  border: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1em;
   border-bottom: 2px solid #12a6e6;
   background-color: #02336e;
   color: #12a6e6;
   padding: 20px;
-  width: 400px;
+  width: 100%;
   height: 30px;
   text-align: center;
 }
@@ -35,16 +37,13 @@ input::placeholder {
   color: #fff;
 }
 input:focus {
-  background-color: rgba(236, 236, 233, 0.2);
-  border-bottom: 2px solid #2929d1;
+  border-bottom: 1px solid #2929d1;
 }
 input:required:invalid {
-  border-bottom: 4px solid red;
+  border-bottom: 1px solid red;
   color: red;
 }
-input:required:valid {
-  border-color: 2px solid green;
-}
+
 
 @media (max-width: 500px) {
   input{

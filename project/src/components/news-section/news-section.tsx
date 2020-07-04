@@ -1,15 +1,20 @@
 import { Component, ComponentInterface, h, State } from '@stencil/core';
 import { News } from './news';
 
+/*
+* acme's news container using Fetch 
+*/
+
 @Component({
   tag: 'news-section',
   styleUrl: 'news-section.css',
   shadow: true,
 })
 export class NewsSection implements ComponentInterface {
+  @State() page = 1;
   @State() news: Array <News> = [];
   @State() limit = 2;
-  @State() page = 1;
+  
   
 
   componentDidLoad() {
@@ -34,11 +39,11 @@ export class NewsSection implements ComponentInterface {
         {this.news.map(news =>
           <div class="container">
             <div class="singolo">
-              <div class="numero-news">{news.id}</div>
               <div>
                 <h3 class="titoletto">{news.title}</h3>
                 <p>{news.body}</p>
               </div>
+            <div class="numero-news">{news.id}</div>
             </div>
           </div>
         )}

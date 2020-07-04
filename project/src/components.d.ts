@@ -49,6 +49,7 @@ export namespace Components {
     interface ContainerMobile {
     }
     interface ContattaciForm {
+        "icona1": string;
     }
     interface ContattiNavigazione {
     }
@@ -424,6 +425,7 @@ declare namespace LocalJSX {
     interface ContainerMobile {
     }
     interface ContattaciForm {
+        "icona1"?: string;
     }
     interface ContattiNavigazione {
     }

@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h } from '@stencil/core';
+import { Component, ComponentInterface, h, getAssetPath, Prop } from '@stencil/core';
   /*
   * background for 'contattaci' form
   */
@@ -9,15 +9,20 @@ import { Component, ComponentInterface, h } from '@stencil/core';
   shadow: true,
 })
 export class ContattaciForm implements ComponentInterface {
-  
+  @Prop() icona1 ="icona1.png"
 
   render() {
     return (
-      <div class="container">
-        <div class="spazio"></div>
-        <div class="box-blu">
-          <testo-contattaci></testo-contattaci>
-          <campo-contattaci></campo-contattaci>
+      <div>
+        <testo-contattaci></testo-contattaci>
+        <div class="container">
+          <div class="spazio"></div>
+          <div class="box-blu">
+            <div class="container-img"><img src={getAssetPath(`/assets/${this.icona1}`)} /></div>
+            <div class="container-testo">
+              <campo-contattaci></campo-contattaci>
+            </div>
+          </div>
         </div>
       </div>
     );
