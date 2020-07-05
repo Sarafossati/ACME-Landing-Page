@@ -9,7 +9,7 @@ import { Component, ComponentInterface, h, getAssetPath, Prop } from '@stencil/c
   shadow: true,
 })
 export class ContattaciForm implements ComponentInterface {
-  @Prop() icona1 ="icona1.png"
+  @Prop() icona1 ="Contact.png"
 
   render() {
     return (

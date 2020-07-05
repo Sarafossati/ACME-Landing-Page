@@ -44,10 +44,37 @@ input:required:invalid {
   color: red;
 }
 
+.bottone1{
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: 400;
+  background-color:#12A6E6;
+  border-radius: 5px;
+  padding: 1em;
+  width: 200px;
+  height: auto;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.bottone1:hover{
+  background-color: rgb(47, 47, 47);
+  transition: 0.8s;
+}
 
 @media (max-width: 500px) {
   input{
     width: 50%;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
 

@@ -11,7 +11,6 @@ export class ContainerFaq implements ComponentInterface {
     return (
       <div>
         <bottone-faq></bottone-faq>
-        <testo-faq></testo-faq>
       </div>
     );
   }

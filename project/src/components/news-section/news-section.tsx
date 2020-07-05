@@ -11,21 +11,30 @@ import { News } from './news';
   shadow: true,
 })
 export class NewsSection implements ComponentInterface {
-  @State() page = 1;
   @State() news: Array <News> = [];
   @State() limit = 2;
   
-  
+  /*
+  * Called once just after the component fully loaded and the first render() occurs.
+  */
 
   componentDidLoad() {
     this.fetchData();
   }
 
+  /*
+  * controllo della caricamento degli atricolo della fetch
+  */
+ 
   private fetchData = () => {
     if (this.limit >= 10) {
       return;
     }
-    fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${this.limit}&_page=${this.page}`)
+
+    /* Con il bottone "carica altri" vengono caricati 2 articoli alla volta */
+
+
+    fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${this.limit}`)
       .then(response => response.json())
       .then((json) => (this.news = json))
     this.limit += 2;
