@@ -13,7 +13,7 @@ export class TerzaCarta implements ComponentInterface {
     return (
       <div>
         <terza-immagine></terza-immagine>
-        <primo-box-testo></primo-box-testo>
+        <terzo-box-testo></terzo-box-testo>
       </div>
     );
   }

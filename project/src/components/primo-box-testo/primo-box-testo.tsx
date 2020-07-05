@@ -12,10 +12,10 @@ export class PrimoBoxTesto implements ComponentInterface {
   render() {
     return (
       <div class="box-testo">
-        <titoli-carte cardTitol="PRESTITI FINANZIARI ACME REALIZZA I TUOI DESIDERI"></titoli-carte>
+        <titoli-carte cardTitol="PRESTITI FINANZIARI: ACME REALIZZA I TUOI DESIDERI"></titoli-carte>
         <simple-text simpleText="Pensa a quante cose puoi fare per loro. Affidati ad ACME."></simple-text>
         <bottone-scuro btnTextScuro="i nostri prodotti"></bottone-scuro>
-        <bottone-chiaro btnTextChiaro="preventivo"></bottone-chiaro>
+        <bottone-chiaro btnTextChiaro="Prestiti"></bottone-chiaro>
       </div>
     );
   }

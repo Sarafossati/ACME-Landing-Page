@@ -36,7 +36,9 @@ export namespace Components {
         /**
           * contenitore cerchi con immagini dello sfaff dell'azienda
          */
-        "staff": string;
+        "staff1": string;
+        "staff2": string;
+        "staff3": string;
     }
     interface CampoContattaci {
     }
@@ -92,6 +94,8 @@ export namespace Components {
     }
     interface SecondaImmagine {
     }
+    interface SecondoBoxTesto {
+    }
     interface SimpleText {
         /**
           * Prop per rendere il testo variabile all'interno del sito
@@ -101,6 +105,8 @@ export namespace Components {
     interface TerzaCarta {
     }
     interface TerzaImmagine {
+    }
+    interface TerzoBoxTesto {
     }
     interface TestoCalltoaction {
     }
@@ -302,6 +308,12 @@ declare global {
         prototype: HTMLSecondaImmagineElement;
         new (): HTMLSecondaImmagineElement;
     };
+    interface HTMLSecondoBoxTestoElement extends Components.SecondoBoxTesto, HTMLStencilElement {
+    }
+    var HTMLSecondoBoxTestoElement: {
+        prototype: HTMLSecondoBoxTestoElement;
+        new (): HTMLSecondoBoxTestoElement;
+    };
     interface HTMLSimpleTextElement extends Components.SimpleText, HTMLStencilElement {
     }
     var HTMLSimpleTextElement: {
@@ -319,6 +331,12 @@ declare global {
     var HTMLTerzaImmagineElement: {
         prototype: HTMLTerzaImmagineElement;
         new (): HTMLTerzaImmagineElement;
+    };
+    interface HTMLTerzoBoxTestoElement extends Components.TerzoBoxTesto, HTMLStencilElement {
+    }
+    var HTMLTerzoBoxTestoElement: {
+        prototype: HTMLTerzoBoxTestoElement;
+        new (): HTMLTerzoBoxTestoElement;
     };
     interface HTMLTestoCalltoactionElement extends Components.TestoCalltoaction, HTMLStencilElement {
     }
@@ -376,9 +394,11 @@ declare global {
         "quarta-immagine": HTMLQuartaImmagineElement;
         "seconda-carta": HTMLSecondaCartaElement;
         "seconda-immagine": HTMLSecondaImmagineElement;
+        "secondo-box-testo": HTMLSecondoBoxTestoElement;
         "simple-text": HTMLSimpleTextElement;
         "terza-carta": HTMLTerzaCartaElement;
         "terza-immagine": HTMLTerzaImmagineElement;
+        "terzo-box-testo": HTMLTerzoBoxTestoElement;
         "testo-calltoaction": HTMLTestoCalltoactionElement;
         "testo-contattaci": HTMLTestoContattaciElement;
         "testo-contatti": HTMLTestoContattiElement;
@@ -416,7 +436,9 @@ declare namespace LocalJSX {
         /**
           * contenitore cerchi con immagini dello sfaff dell'azienda
          */
-        "staff"?: string;
+        "staff1"?: string;
+        "staff2"?: string;
+        "staff3"?: string;
     }
     interface CampoContattaci {
     }
@@ -472,6 +494,8 @@ declare namespace LocalJSX {
     }
     interface SecondaImmagine {
     }
+    interface SecondoBoxTesto {
+    }
     interface SimpleText {
         /**
           * Prop per rendere il testo variabile all'interno del sito
@@ -481,6 +505,8 @@ declare namespace LocalJSX {
     interface TerzaCarta {
     }
     interface TerzaImmagine {
+    }
+    interface TerzoBoxTesto {
     }
     interface TestoCalltoaction {
     }
@@ -526,9 +552,11 @@ declare namespace LocalJSX {
         "quarta-immagine": QuartaImmagine;
         "seconda-carta": SecondaCarta;
         "seconda-immagine": SecondaImmagine;
+        "secondo-box-testo": SecondoBoxTesto;
         "simple-text": SimpleText;
         "terza-carta": TerzaCarta;
         "terza-immagine": TerzaImmagine;
+        "terzo-box-testo": TerzoBoxTesto;
         "testo-calltoaction": TestoCalltoaction;
         "testo-contattaci": TestoContattaci;
         "testo-contatti": TestoContatti;
@@ -570,9 +598,11 @@ declare module "@stencil/core" {
             "quarta-immagine": LocalJSX.QuartaImmagine & JSXBase.HTMLAttributes<HTMLQuartaImmagineElement>;
             "seconda-carta": LocalJSX.SecondaCarta & JSXBase.HTMLAttributes<HTMLSecondaCartaElement>;
             "seconda-immagine": LocalJSX.SecondaImmagine & JSXBase.HTMLAttributes<HTMLSecondaImmagineElement>;
+            "secondo-box-testo": LocalJSX.SecondoBoxTesto & JSXBase.HTMLAttributes<HTMLSecondoBoxTestoElement>;
             "simple-text": LocalJSX.SimpleText & JSXBase.HTMLAttributes<HTMLSimpleTextElement>;
             "terza-carta": LocalJSX.TerzaCarta & JSXBase.HTMLAttributes<HTMLTerzaCartaElement>;
             "terza-immagine": LocalJSX.TerzaImmagine & JSXBase.HTMLAttributes<HTMLTerzaImmagineElement>;
+            "terzo-box-testo": LocalJSX.TerzoBoxTesto & JSXBase.HTMLAttributes<HTMLTerzoBoxTestoElement>;
             "testo-calltoaction": LocalJSX.TestoCalltoaction & JSXBase.HTMLAttributes<HTMLTestoCalltoactionElement>;
             "testo-contattaci": LocalJSX.TestoContattaci & JSXBase.HTMLAttributes<HTMLTestoContattaciElement>;
             "testo-contatti": LocalJSX.TestoContatti & JSXBase.HTMLAttributes<HTMLTestoContattiElement>;

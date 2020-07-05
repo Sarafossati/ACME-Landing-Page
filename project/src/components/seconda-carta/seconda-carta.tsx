@@ -11,7 +11,7 @@ export class SecondaCarta implements ComponentInterface {
     return (
       <div>
         <seconda-immagine></seconda-immagine>
-        <primo-box-testo></primo-box-testo>
+        <secondo-box-testo></secondo-box-testo>
       </div>
     );
   }
