@@ -57,7 +57,7 @@ button{
   background-color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .menu{
     display: none;
   }

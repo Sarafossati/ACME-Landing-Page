@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface BannerPreventivo {
+        "applicazione": string;
     }
     interface BckContattaci {
     }
@@ -48,12 +49,6 @@ export namespace Components {
     }
     interface ContainerFaq {
     }
-    interface ContainerMobile {
-        "contatti": string;
-        "news": string;
-        "preventivi": string;
-        "prodotti": string;
-    }
     interface ContattaciForm {
         "icona1": string;
     }
@@ -69,10 +64,9 @@ export namespace Components {
     }
     interface ListaContatti {
     }
-    interface MenuMobile {
-        "simpleText": string;
-    }
     interface MenuPrincipale {
+    }
+    interface MobileMenu {
     }
     interface NavigazionePrincipale {
     }
@@ -188,12 +182,6 @@ declare global {
         prototype: HTMLContainerFaqElement;
         new (): HTMLContainerFaqElement;
     };
-    interface HTMLContainerMobileElement extends Components.ContainerMobile, HTMLStencilElement {
-    }
-    var HTMLContainerMobileElement: {
-        prototype: HTMLContainerMobileElement;
-        new (): HTMLContainerMobileElement;
-    };
     interface HTMLContattaciFormElement extends Components.ContattaciForm, HTMLStencilElement {
     }
     var HTMLContattaciFormElement: {
@@ -236,17 +224,17 @@ declare global {
         prototype: HTMLListaContattiElement;
         new (): HTMLListaContattiElement;
     };
-    interface HTMLMenuMobileElement extends Components.MenuMobile, HTMLStencilElement {
-    }
-    var HTMLMenuMobileElement: {
-        prototype: HTMLMenuMobileElement;
-        new (): HTMLMenuMobileElement;
-    };
     interface HTMLMenuPrincipaleElement extends Components.MenuPrincipale, HTMLStencilElement {
     }
     var HTMLMenuPrincipaleElement: {
         prototype: HTMLMenuPrincipaleElement;
         new (): HTMLMenuPrincipaleElement;
+    };
+    interface HTMLMobileMenuElement extends Components.MobileMenu, HTMLStencilElement {
+    }
+    var HTMLMobileMenuElement: {
+        prototype: HTMLMobileMenuElement;
+        new (): HTMLMobileMenuElement;
     };
     interface HTMLNavigazionePrincipaleElement extends Components.NavigazionePrincipale, HTMLStencilElement {
     }
@@ -374,7 +362,6 @@ declare global {
         "container-body": HTMLContainerBodyElement;
         "container-carte": HTMLContainerCarteElement;
         "container-faq": HTMLContainerFaqElement;
-        "container-mobile": HTMLContainerMobileElement;
         "contattaci-form": HTMLContattaciFormElement;
         "contatti-navigazione": HTMLContattiNavigazioneElement;
         "didascalia-footer": HTMLDidascaliaFooterElement;
@@ -382,8 +369,8 @@ declare global {
         "header-principale": HTMLHeaderPrincipaleElement;
         "img-logo": HTMLImgLogoElement;
         "lista-contatti": HTMLListaContattiElement;
-        "menu-mobile": HTMLMenuMobileElement;
         "menu-principale": HTMLMenuPrincipaleElement;
+        "mobile-menu": HTMLMobileMenuElement;
         "navigazione-principale": HTMLNavigazionePrincipaleElement;
         "news-section": HTMLNewsSectionElement;
         "oggetto-messaggio": HTMLOggettoMessaggioElement;
@@ -407,6 +394,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface BannerPreventivo {
+        "applicazione"?: string;
     }
     interface BckContattaci {
     }
@@ -448,12 +436,6 @@ declare namespace LocalJSX {
     }
     interface ContainerFaq {
     }
-    interface ContainerMobile {
-        "contatti"?: string;
-        "news"?: string;
-        "preventivi"?: string;
-        "prodotti"?: string;
-    }
     interface ContattaciForm {
         "icona1"?: string;
     }
@@ -469,10 +451,9 @@ declare namespace LocalJSX {
     }
     interface ListaContatti {
     }
-    interface MenuMobile {
-        "simpleText"?: string;
-    }
     interface MenuPrincipale {
+    }
+    interface MobileMenu {
     }
     interface NavigazionePrincipale {
     }
@@ -532,7 +513,6 @@ declare namespace LocalJSX {
         "container-body": ContainerBody;
         "container-carte": ContainerCarte;
         "container-faq": ContainerFaq;
-        "container-mobile": ContainerMobile;
         "contattaci-form": ContattaciForm;
         "contatti-navigazione": ContattiNavigazione;
         "didascalia-footer": DidascaliaFooter;
@@ -540,8 +520,8 @@ declare namespace LocalJSX {
         "header-principale": HeaderPrincipale;
         "img-logo": ImgLogo;
         "lista-contatti": ListaContatti;
-        "menu-mobile": MenuMobile;
         "menu-principale": MenuPrincipale;
+        "mobile-menu": MobileMenu;
         "navigazione-principale": NavigazionePrincipale;
         "news-section": NewsSection;
         "oggetto-messaggio": OggettoMessaggio;
@@ -578,7 +558,6 @@ declare module "@stencil/core" {
             "container-body": LocalJSX.ContainerBody & JSXBase.HTMLAttributes<HTMLContainerBodyElement>;
             "container-carte": LocalJSX.ContainerCarte & JSXBase.HTMLAttributes<HTMLContainerCarteElement>;
             "container-faq": LocalJSX.ContainerFaq & JSXBase.HTMLAttributes<HTMLContainerFaqElement>;
-            "container-mobile": LocalJSX.ContainerMobile & JSXBase.HTMLAttributes<HTMLContainerMobileElement>;
             "contattaci-form": LocalJSX.ContattaciForm & JSXBase.HTMLAttributes<HTMLContattaciFormElement>;
             "contatti-navigazione": LocalJSX.ContattiNavigazione & JSXBase.HTMLAttributes<HTMLContattiNavigazioneElement>;
             "didascalia-footer": LocalJSX.DidascaliaFooter & JSXBase.HTMLAttributes<HTMLDidascaliaFooterElement>;
@@ -586,8 +565,8 @@ declare module "@stencil/core" {
             "header-principale": LocalJSX.HeaderPrincipale & JSXBase.HTMLAttributes<HTMLHeaderPrincipaleElement>;
             "img-logo": LocalJSX.ImgLogo & JSXBase.HTMLAttributes<HTMLImgLogoElement>;
             "lista-contatti": LocalJSX.ListaContatti & JSXBase.HTMLAttributes<HTMLListaContattiElement>;
-            "menu-mobile": LocalJSX.MenuMobile & JSXBase.HTMLAttributes<HTMLMenuMobileElement>;
             "menu-principale": LocalJSX.MenuPrincipale & JSXBase.HTMLAttributes<HTMLMenuPrincipaleElement>;
+            "mobile-menu": LocalJSX.MobileMenu & JSXBase.HTMLAttributes<HTMLMobileMenuElement>;
             "navigazione-principale": LocalJSX.NavigazionePrincipale & JSXBase.HTMLAttributes<HTMLNavigazionePrincipaleElement>;
             "news-section": LocalJSX.NewsSection & JSXBase.HTMLAttributes<HTMLNewsSectionElement>;
             "oggetto-messaggio": LocalJSX.OggettoMessaggio & JSXBase.HTMLAttributes<HTMLOggettoMessaggioElement>;

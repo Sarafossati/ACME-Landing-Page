@@ -13,7 +13,9 @@ export class ImgLogo implements ComponentInterface {
 
   render() {
     return (
-      <a href="#"><img class="logo" src="/assets/LOGO.jpg"></img></a>
+      <div>
+        <a href="#"><img class="logo" src="/assets/LOGO.jpg"></img></a>
+      </div>
     );
   }
 

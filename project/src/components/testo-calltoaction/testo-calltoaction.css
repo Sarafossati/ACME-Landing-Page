@@ -57,7 +57,17 @@ p{
     margin-top: 5px;
   }
 
-  .testi{
-    margin-top: 130px;
+  .background{
+    margin-top: 5em;
+  }
+}
+
+@media (max-width: 700) {
+  .background{
+    margin-top: 20em;
+  }
+
+  h1{
+    margin-top: 2em;
   }
 }

@@ -16,7 +16,7 @@ export class ContattiNavigazione implements ComponentInterface {
       <div>
         <lista-contatti></lista-contatti>
         <navigazione-principale></navigazione-principale>
-        <container-mobile></container-mobile>
+        <mobile-menu></mobile-menu>
       </div>
     );
   }
